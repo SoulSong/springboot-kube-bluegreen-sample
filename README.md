@@ -53,11 +53,11 @@ In ./kubernetes folder, you will find all yaml-files for kubernetes.
 
 ### Check Version
 > **INPUT**
-```
+``` text
 curl -i http://shf.sample.com:8080/sample-service/version
 ```
 > **OUTPUT**
-```
+```  text
 curl -i http://shf.sample.com/sample-service/version
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
@@ -76,11 +76,11 @@ Blue
 
 ### ReCheck Version
 > **INPUT**
-```
+``` text
 curl -i http://shf.sample.com:8080/sample-service/version
 ```
 > **OUTPUT**
-```
+``` text
 curl -i http://shf.sample.com/sample-service/version
   % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
                                  Dload  Upload   Total   Spent    Left  Speed
