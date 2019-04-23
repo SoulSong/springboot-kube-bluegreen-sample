@@ -52,22 +52,12 @@ In ./kubernetes folder, you will find all yaml-files for kubernetes.
 * kubectl apply -f ingress.yaml -n blue-green
 
 ### Check Version
-> **INPUT**
+> INPUT
 ``` text
 curl -i http://shf.sample.com:8080/sample-service/version
 ```
-> **OUTPUT**
+> OUTPUT
 ```  text
-curl -i http://shf.sample.com/sample-service/version
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-100     4  100     4    0     0    129      0 --:--:-- --:--:-- --:--:--   129HTTP/1.1 200
-Server: nginx/1.15.10
-Date: Tue, 23 Apr 2019 07:51:52 GMT
-Content-Type: text/plain;charset=UTF-8
-Content-Length: 4
-Connection: keep-alive
-
 Blue
 ```
 
@@ -75,21 +65,11 @@ Blue
 * kubectl apply -f service-green.yaml
 
 ### ReCheck Version
-> **INPUT**
+> INPUT
 ``` text
 curl -i http://shf.sample.com:8080/sample-service/version
 ```
-> **OUTPUT**
+> OUTPUT
 ``` text
-curl -i http://shf.sample.com/sample-service/version
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-100     5  100     5    0     0     14      0 --:--:-- --:--:-- --:--:--    14HTTP/1.1 200
-Server: nginx/1.15.10
-Date: Tue, 23 Apr 2019 08:01:13 GMT
-Content-Type: text/plain;charset=UTF-8
-Content-Length: 5
-Connection: keep-alive
-
 Green
 ```
