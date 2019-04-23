@@ -1,5 +1,5 @@
 # Background
-This is a simple example of a blue-green release. It depends on springboot2, builds by maven, deploys by kubernetes.
+This is a simple example of a blue/green deployment. It depends on springboot2, builds by maven, deploys by kubernetes.
 
 # How To Use
 
