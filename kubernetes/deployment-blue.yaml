@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: deployment-blue
+  namespace: blue-green
+spec:
+  selector:
+    matchLabels:
+      version: Blue
+  replicas: 2
+  template:
+    metadata:
+      labels:
+        version: Blue
+    spec:
+      containers:
+        - name: sample-service
+          image: local-dtr.com/springboot-kube-sample:Blue
+          ports:
+            - containerPort: 8080

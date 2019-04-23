@@ -1,0 +1,13 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: sample-ingress
+spec:
+  rules:
+    - host: shf.sample.com
+      http:
+        paths:
+          - path: /sample-service
+            backend:
+              serviceName: sample-svc
+              servicePort: 8080
