@@ -51,6 +51,12 @@ In ./kubernetes folder, you will find all yaml-files for kubernetes.
 ### Create ingress
 * kubectl apply -f ingress.yaml -n blue-green
 
+### Modify hosts file
+Add hosts configuration into your **/etc/hosts file, the domains which defined in ingress.yaml
+```text
+127.0.0.1	shf.sample.com
+```
+
 ### Check Version
 > INPUT
 ``` text
