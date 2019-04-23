@@ -20,7 +20,9 @@ public class VersionController {
     private BuildProperties buildProperties;
 
     @GetMapping("/version")
-    public String version() {
+    public String version() throws InterruptedException {
+        //test for old connections still connect with old version pods when switching version
+        Thread.sleep(10*1000);
         if (null == buildProperties) {
             return "UnKnow";
         }

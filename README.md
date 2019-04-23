@@ -60,20 +60,20 @@ Add hosts configuration into your **/etc/hosts file, the domains which defined i
 ### Check Version
 > INPUT
 ``` text
-curl -i http://shf.sample.com:8080/sample-service/version
+curl -i http://shf.sample.com/sample-service/version
 ```
 > OUTPUT
 ```  text
 Blue
 ```
 
-### Change service verson(`green`)
+### Change service version(`green`)
 * kubectl apply -f service-green.yaml
 
 ### ReCheck Version
 > INPUT
 ``` text
-curl -i http://shf.sample.com:8080/sample-service/version
+curl -i http://shf.sample.com/sample-service/version
 ```
 > OUTPUT
 ``` text
